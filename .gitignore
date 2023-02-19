@@ -1,3 +1,4 @@
 .python-version
 .teletolo.ini
 *.session
+.direnv

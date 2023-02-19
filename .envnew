@@ -1,0 +1,5 @@
+*? python3 -m venv ~/repos/teletolo
+*? source ~/repos/teletolo/bin/activate
+pip install -r requirements.txt
+python3 ~/repos/teletolo/teletolo.py --help
+
