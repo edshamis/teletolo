@@ -1,0 +1,41 @@
+Usage: teletolo.py [OPTIONS]
+
+Options:
+  --api_id TEXT                   API id from the Telegram developer's console
+  --api_hash TEXT                 API hash from the Telegram developer's
+                                  console
+  --phone TEXT                    Your phone number (with international
+                                  prefix)
+  --username TEXT                 Your username in Telegram
+  --msg_limit INTEGER             Maximum number of messages to check (from
+                                  today backwards)
+  --date_header_fmt TEXT          Format for date headers (not used if
+                                  --append_to_journal was used)
+  --block_fmt TEXT                Format for each dumped message, it can
+                                  include {time}, {tags}, {date} and {message}
+  --journal_folder TEXT           Folder in which journal pages are stored
+  --assets_folder TEXT            Folder in which assets (images, audios) are
+                                  stored
+  --journal_date_fmt TEXT         Format for the {date} part, when used in
+                                  block_fmt or date_header_fmt
+  --time_fmt TEXT                 Format for the {time} part, when used in
+                                  block_fmt
+  -c, --channel_id TEXT           Channel id from which the messages will be
+                                  retrieved
+  -b, --days_back INTEGER         Retrieve messages only for the last
+                                  --days_back days
+  -t, --tags TEXT                 String prepended to the message. Eg:
+                                  #telegram #quick-note
+  -a, --append_to_journal BOOLEAN
+                                  If True, the messages will be appended to
+                                  the appropriate journal file, acoording with
+                                  the date. If false, the messages will be
+                                  dumped in the standard output, grouped by
+                                  date which will appear in headings
+  -d, --delete_after_download BOOLEAN
+                                  Delete the downloaded messages from the
+                                  Telegram channel
+  -n, --dry                       Do not perform any action, only check
+                                  parameters and Telegram credentials
+  --config FILE                   Read configuration from FILE.
+  --help                          Show this message and exit.
